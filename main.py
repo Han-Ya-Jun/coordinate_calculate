@@ -100,7 +100,7 @@ def api_upload():
         addresses = []
         for ad in address_json:
             address = ad["地址"]
-            ADDRESS_URL = "http://10.202.58.144:1080/geo?ak=3e7b477066cfdf7276f768adff15521c&address="
+            ADDRESS_URL = ""
             url = ADDRESS_URL + str(address)
             req = requests.get(url)
             req = req.json()
